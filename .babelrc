@@ -1,0 +1,12 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": "umd"
+      }
+    ],
+    "react",
+    "stage-0"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "react-fiber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-file build/app.js",
+    "browserify": "browserify src/index.js -o build/app.js -x react -x react-dom",
+    "build:watch": "nodemon --watch src --exec 'yarn build'",
+    "clean": "rm -rf build/*"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
+    "browserify-shim": "^3.8.14",
+    "nodemon": "^1.17.1"
+  },
+  "browserify-shim": {
+    "react": "global:React",
+    "react-dom": "global:ReactDOM"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify"
+      ],
+      "browserify-shim"
+    ]
+  }
+}

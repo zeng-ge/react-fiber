@@ -1,0 +1,64 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "amd": true,
+    "es6": true,
+    "node": true,
+    "mocha": true,
+    "jquery": true
+  },
+  "globals": {
+    "sinon": true,
+    "_": true
+  },
+  "rules": {
+    "strict": 0,
+    "comma-dangle": 2,
+    "quotes": [
+      2,
+      "single"
+    ],
+    "jsx-quotes": [2, "prefer-double"],
+    "no-undef": 2,
+    "semi": [ 2, "never" ],
+    "no-extra-semi": 2,
+    "no-underscore-dangle": 1,
+    "no-console": 0,
+    "no-unused-vars": 2,
+    "no-trailing-spaces": [
+      1,
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "no-unreachable": 2,
+    "no-alert": 2,
+    "no-case-declarations": 0,
+    "no-empty-pattern": 2,
+    "no-fallthrough": 2,
+    "no-octal": 2,
+    "no-redeclare": 2,
+    "no-self-assign": 2,
+    "no-unused-labels": 2,
+    "no-delete-var": 2,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-class-assign": 2,
+    "no-const-assign": 2,
+    "no-dupe-class-members": 2,
+    "no-new-symbol": 2,
+    "constructor-super": 2,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2
+  }
+}
