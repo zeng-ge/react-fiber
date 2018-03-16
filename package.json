@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-file build/app.js",
-    "browserify": "browserify src/index.js -o build/app.js -x react -x react-dom",
+    "build": "browserify src/index.js -o build/app.js -x react -x react-dom",
     "build:watch": "nodemon --watch src --exec 'yarn build'",
     "clean": "rm -rf build/*"
   },
